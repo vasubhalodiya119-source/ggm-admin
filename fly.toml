@@ -1,0 +1,13 @@
+app = "ggm-backend"
+primary_region = "bom"
+
+[build]
+  builder = "flyio/nodejs"
+
+[env]
+  NODE_VERSION = "18"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
